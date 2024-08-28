@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">  <!-- Accessing the css file -->
+</head>
+<body>
+    <h1>CALCULATOR</h1>   <!-- Heading Tag -->
+    <div class="calculator">
+        <div id="display" class="display">0</div> <!-- Display Zero before Operation -->
+
+        <!-- Used button tag for onclick and display operation -->
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">All Clear</button> <!-- This button will clear display on click -->
+            <button class="btn" onclick="clearLastCharacter()">←</button> <!-- This button will clear single digit on click -->
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendToDisplay('/')">/</button> <!-- This button will perform division operation on click -->
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="appendToDisplay('*')">*</button> <!-- This button will perform multiplication operation on click -->
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendToDisplay('+')">+</button> <!-- This button will perform addition operation on click -->
+            <button class="btn" onclick="appendToDisplay('%')">%</button> <!-- This button will perform modulus operation on click -->
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" onclick="appendToDisplay('-')">-</button> <!-- This button will perform subtraction operation on click -->
+            <button class="btn" onclick="calculateResult()">=</button> <!-- This button will calculate the result on click -->
+        </div>
+    </div>
+    <script src="calculator.js"></script>   <!-- Accessing the javascript file -->
+</body>
+</html>
