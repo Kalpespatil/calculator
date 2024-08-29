@@ -15,7 +15,7 @@ Files :
 
 Getting Started :
 1.Clone the Repository
-https://github.com/Kalpespatil/calculator.git
+https://github.com/kalpeshpatil809/calculator.git
 
 2.Navigate to the Project Directory
 cd calculator
